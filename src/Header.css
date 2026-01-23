@@ -1,0 +1,135 @@
+.header {
+  width: 100%;
+  background: white;
+  padding: 16px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border-bottom: 1px solid #f0f0f0; */
+}
+
+.header-wrapper {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.header-logo-img {
+  width: 39px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.header-logo-text {
+  font-family: Manrope;
+  font-weight: 700;
+  font-size: 20px;
+  color: #1a1a1a;
+  letter-spacing: -0.5px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-nav {
+  display: flex;
+  gap: 40px;
+}
+
+.header-nav a {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #0f172a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header-nav a:first-child {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.header-nav a:hover {
+  color: #2b7fff;
+}
+
+.header-button {
+  font-family: Manrope;
+  font-weight: 600;
+  font-size: 15px;
+  background: #2b7fff;
+  color: white;
+  border: none;
+  border-radius: 28px;
+  padding: 10px 28px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
+  letter-spacing: -0.2px;
+}
+
+.header-button:hover {
+  background: #1e5ed8;
+  box-shadow: 0 4px 12px rgba(43, 127, 255, 0.25);
+}
+
+.header-button:active {
+  transform: translateY(1px);
+}
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 16px 40px;
+  }
+
+  .header-right {
+    gap: 30px;
+  }
+
+  .header-nav {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 12px 20px;
+  }
+
+  .header-right {
+    gap: 20px;
+  }
+
+  .header-nav {
+    gap: 20px;
+    flex: 0;
+  }
+
+  .header-nav a {
+    font-size: 13px;
+  }
+
+  .header-button {
+    padding: 8px 20px;
+    font-size: 13px;
+  }
+}

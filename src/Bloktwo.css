@@ -1,0 +1,323 @@
+.bloktwo-container {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.blok-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-left: 628px;
+}
+
+.blok-header {
+  width: 607px;
+  height: 66px;
+  padding-left: 25.6%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.bloktwo-title {
+  position: relative;
+  font-family: Manrope;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin: 0px 0 -24px -804px;
+  color: #000;
+  text-align: left;
+}
+
+.bloktwo-highlight {
+  color: #2563eb;
+}
+
+/* Фон в клітинку */
+.bloktwo-grid-bg {
+  width: 100%;
+  background-image:
+    linear-gradient(
+      0deg,
+      transparent 24%,
+      rgba(200, 200, 200, 0.2) 25%,
+      rgba(200, 200, 200, 0.2) 26%,
+      transparent 27%,
+      transparent 74%,
+      rgba(200, 200, 200, 0.2) 75%,
+      rgba(200, 200, 200, 0.2) 76%,
+      transparent 77%,
+      transparent
+    ),
+    linear-gradient(
+      90deg,
+      transparent 24%,
+      rgba(200, 200, 200, 0.2) 25%,
+      rgba(200, 200, 200, 0.2) 26%,
+      transparent 27%,
+      transparent 74%,
+      rgba(200, 200, 200, 0.2) 75%,
+      rgba(200, 200, 200, 0.2) 76%,
+      transparent 77%,
+      transparent
+    );
+  background-size: 50px 50px;
+  padding: 60px 40px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Карточки в ряд */
+.bloktwo-cards-wrapper {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 170px;
+  position: relative;
+  margin: 0 auto;
+  height: 450px;
+}
+.bloktwo-cards-wrapper::before,
+.bloktwo-cards-wrapper::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-image: repeating-linear-gradient(
+    125deg,
+    #c0c0c0 0px,
+    #c0c0c0 8px,
+    transparent 5px,
+    transparent 16px
+  );
+  top: 34%;
+  width: 174px;
+  z-index: 0;
+  transform-origin: center;
+}
+
+.bloktwo-cards-wrapper::before {
+  left: 24%;
+  transform: skewY(-8deg);
+}
+
+.bloktwo-cards-wrapper::after {
+  right: 18%;
+  transform: skewY(8deg);
+}
+.bloktwo-card {
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+  width: 270px;
+  gap: 0;
+  flex-shrink: 0;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Сходинки - різні висоти */
+.bloktwo-card-1 {
+  align-self: flex-end;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.bloktwo-card-2 {
+  align-self: center;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.bloktwo-card-3 {
+  align-self: flex-start;
+  margin-top: -66px;
+  position: relative;
+  z-index: 2;
+}
+
+.bloktwo-card:hover {
+  transform: translateY(-8px);
+}
+
+.bloktwo-card-top {
+  background: white;
+  border-radius: 25px;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  height: 270px;
+  width: 270px;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.bloktwo-card-bottom {
+  background: white;
+  border-radius: 0 0 25px 25px;
+  padding: 20px 20px 24px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-top: -40px;
+  position: relative;
+  z-index: 1;
+  width: 270px;
+  height: 75.41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bloktwo-card-icon {
+  font-size: 48px;
+  margin-bottom: 8px;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.bloktwo-card-image {
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  margin-top: 12px;
+}
+
+.bloktwo-card-1 .bloktwo-card-image {
+  width: 77px;
+  height: 113px;
+}
+
+.bloktwo-card-2 .bloktwo-card-image {
+  width: 139px;
+  height: 117px;
+}
+
+.bloktwo-card-3 .bloktwo-card-image {
+  width: 126px;
+  height: 104px;
+}
+
+.bloktwo-card-title {
+  font-family: Manrope;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin: 0;
+  color: #000;
+}
+
+.bloktwo-card-text {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin: 0;
+  margin-top: 31px;
+  color: #1a1a1a;
+}
+
+.bloktwo-connector-horizontal {
+  display: none;
+}
+
+.bloktwo-btn {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: white;
+  border: none;
+  border-radius: 24px;
+  padding: 14px 32px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.bloktwo-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+}
+
+.bloktwo-btn:active {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .bloktwo-container {
+    padding: 60px 15px;
+    gap: 40px;
+  }
+
+  .bloktwo-title {
+    font-size: 36px;
+  }
+
+  .bloktwo-grid-bg {
+    padding: 40px 20px;
+  }
+
+  .bloktwo-cards-wrapper {
+    flex-wrap: wrap;
+    height: auto;
+    gap: 30px;
+  }
+
+  .bloktwo-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .bloktwo-card-1,
+  .bloktwo-card-2,
+  .bloktwo-card-3 {
+    align-self: center !important;
+    margin-bottom: 0 !important;
+  }
+
+  .bloktwo-connector-horizontal {
+    display: none;
+  }
+}
+
+.bloktwo-card-bottom {
+  background: white;
+  border-radius: 0 0 25px 25px;
+  padding: 20px 20px 24px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-top: -40px;
+  position: relative;
+  z-index: 1;
+  width: 270px;
+  height: 96.41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,164 @@
+.blokthree-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  background-image: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%),
+    url("./assets/Code_Pattern.png");
+  background-size: cover, auto;
+  background-position: center, center;
+  background-blend-mode: overlay;
+  padding: 100px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 600px;
+  position: relative;
+}
+
+.blokthree-content {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.blokthree-quote {
+  background: white;
+  border-radius: 24px;
+  padding: 20px 20px;
+  max-width: 650px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.blokthree-quote-text {
+  font-family: Manrope;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  margin: 0;
+  color: #1a1a1a;
+  text-align: center;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.blokthree-quote-mark {
+  color: #2b7fff;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.blokthree-quote-bold {
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.blokthree-title {
+  font-family: Manrope;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 110%;
+  letter-spacing: 0%;
+  color: white;
+  text-align: center;
+  margin: 0;
+  max-width: 900px;
+}
+
+.blokthree-highlight {
+  background: white;
+  color: #1a1a1a;
+  border-radius: -1px;
+  display: inline-block;
+  font-weight: 700;
+}
+
+.blokthree-subtitle {
+  font-family: Manrope;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: rgba(255, 255, 255, 0.95);
+  text-align: center;
+  margin: 0;
+  max-width: 700px;
+}
+
+.blokthree-buttons {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.blokthree-btn {
+  font-family: Manrope;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  border: none;
+  border-radius: 28px;
+  padding: 12px 36px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.blokthree-btn-primary {
+  background: #2b7fff;
+  color: white;
+}
+
+.blokthree-btn-primary:hover {
+  background: white;
+  color: #2563eb;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(37, 99, 235, 0.4);
+}
+
+.blokthree-btn-secondary {
+  background: white;
+  border: 2px solid white;
+  font-weight: 700;
+  width: 337px;
+  height: 54px;
+  font-size: 20px;
+}
+
+.blokthree-btn-secondary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 768px) {
+  .blokthree-container {
+    padding: 60px 20px;
+    min-height: auto;
+  }
+
+  .blokthree-title {
+    font-size: 36px;
+  }
+
+  .blokthree-subtitle {
+    font-size: 16px;
+  }
+
+  .blokthree-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .blokthree-btn {
+    width: 100%;
+  }
+}
