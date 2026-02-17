@@ -181,11 +181,11 @@
   border-radius: 0 0 25px 25px;
   padding: 20px 20px 24px 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  margin-top: -40px;
+  margin-top: -26px;
   position: relative;
   z-index: 1;
   width: 270px;
-  height: 75.41px;
+  height: 96.41px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -270,14 +270,46 @@
   transform: translateY(-1px);
 }
 
+@media (max-width: 1024px) {
+  .bloktwo-container {
+    width: 100%;
+    padding: 80px 40px;
+  }
+
+  .bloktwo-title {
+    font-size: 42px;
+    margin: 0 0 -24px 0;
+  }
+
+  .blok-container {
+    margin-left: 0;
+  }
+
+  .bloktwo-cards-wrapper {
+    gap: 100px;
+  }
+}
+
 @media (max-width: 768px) {
   .bloktwo-container {
+    width: 100%;
     padding: 60px 15px;
     gap: 40px;
   }
 
+  .blok-container {
+    margin-left: 0;
+  }
+
+  .blok-header {
+    width: 100%;
+    padding-left: 0;
+  }
+
   .bloktwo-title {
-    font-size: 36px;
+    font-size: 32px;
+    margin: 0;
+    padding-left: 0;
   }
 
   .bloktwo-grid-bg {
@@ -304,6 +336,80 @@
 
   .bloktwo-connector-horizontal {
     display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .bloktwo-container {
+    padding: 40px 12px;
+    gap: 30px;
+  }
+
+  .bloktwo-title {
+    font-size: 24px;
+  }
+
+  .bloktwo-grid-bg {
+    padding: 30px 15px;
+    gap: 30px;
+  }
+
+  .bloktwo-cards-wrapper {
+    gap: 20px;
+  }
+
+  .bloktwo-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .bloktwo-card-top {
+    height: auto;
+    padding: 16px;
+  }
+
+  .bloktwo-card-title {
+    font-size: 16px;
+  }
+
+  .bloktwo-card-text {
+    font-size: 12px;
+  }
+
+  .bloktwo-card-bottom {
+    width: 100%;
+    height: auto;
+    padding: 16px;
+  }
+
+  .bloktwo-card-icon {
+    font-size: 32px;
+  }
+
+  .bloktwo-card-label {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 375px) {
+  .bloktwo-container {
+    padding: 30px 10px;
+  }
+
+  .bloktwo-title {
+    font-size: 22px;
+  }
+
+  .bloktwo-card-title {
+    font-size: 14px;
+  }
+
+  .bloktwo-card-text {
+    font-size: 11px;
+  }
+
+  .bloktwo-card-icon {
+    font-size: 28px;
   }
 }
 

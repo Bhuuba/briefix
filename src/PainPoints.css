@@ -62,12 +62,13 @@
     top: -60px;
     transform: translateX(-50%);
     z-index: 10;
+    transition: transform 0.1s linear;
   }
 
   .pain-points-logo-img {
     position: absolute;
     top: 34px;
-    left: 287px;
+    left: 230px;
     width: 146px;
     height: 181px;
     object-fit: contain;
@@ -95,6 +96,13 @@
     background: #ff4d4d;
     /* box-shadow: -20px 20px 0px rgba(255, 180, 140, 0.3), 0 10px 30px rgba(255, 77, 77, 0.15); */
     position: relative;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .pain-card.pain-card-active {
+    border-color: #4da6ff;
+    background: #4da6ff;
+    transform: translateY(-8px);
   }
 
   .pain-redol {
@@ -138,6 +146,8 @@
   .pain-redol-2 {
     top: 50%;
     transform: translateY(-50%);
+    left: auto;
+    right: -80px;
   }
 
   .pain-redol-3 {
@@ -206,6 +216,61 @@
     height: 357px;
     object-fit: contain;
     /* max-height: 140px; */
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .pain-card-button {
+    width: 100%;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #4da6ff 0%, #2680e8 100%);
+    border: none;
+    border-radius: 12px;
+    font-family: Manrope;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: all 0.3s ease;
+    animation: slideUp 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 10;
+  }
+
+  .pain-card-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(77, 166, 255, 0.3);
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .pain-card-title {
+    animation: fadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.1s both;
+  }
+
+  .pain-card-text {
+    animation: fadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.2s both;
+  }
+
+  .pain-card-warning {
+    animation: fadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0s both;
   }
 
   .pain-points-timeline {
@@ -242,6 +307,14 @@
     background: #d0d0d0;
     position: relative;
     z-index: 1;
+    transition: all 0.3s ease;
+  }
+
+  .timeline-dot-active {
+    background: #4da6ff;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0 12px rgba(77, 166, 255, 0.5);
   }
 
   @media (max-width: 1200px) {
@@ -287,11 +360,31 @@
 
   @media (max-width: 768px) {
     .pain-points {
-      padding: 40px 20px;
+      padding: 40px 16px;
+      margin-left: 0;
+      width: 100%;
+      overflow-x: hidden;
+    }
+
+    .pain-points-wrapper {
+      max-width: 100%;
+      gap: 30px;
+    }
+
+    .pain-points-header {
+      flex-direction: column;
+      align-items: center;
+      max-width: 100%;
+    }
+
+    .pain-points-content {
+      margin-left: 0;
+      max-width: 100%;
     }
 
     .pain-points-title {
       font-size: 28px;
+      margin: 0 0 12px 0;
     }
 
     .pain-points-subtitle {
@@ -301,11 +394,282 @@
     .pain-card {
       flex-direction: column;
       width: 100%;
+      max-width: calc(100vw - 40px);
       font-size: 16px;
+      height: auto;
+      padding: 12px;
+      gap: 12px;
+      margin: 0 auto;
+    }
+
+    .pain-card-left {
+      width: 100%;
+      flex: 0 0 auto;
+      height: auto;
+      padding: 16px 12px;
+    }
+
+    .pain-card-right {
+      width: 100%;
+      flex: 0 0 auto;
+      padding: 12px;
+    }
+
+    .pain-card-image {
+      width: 100%;
+      height: auto;
+      max-height: 250px;
     }
 
     .pain-card-text {
       font-size: 13px;
+      width: 100%;
+      margin: 0;
+    }
+
+    .pain-card-title {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .pain-card-warning {
+      width: 32px;
+      height: 32px;
+    }
+
+    .pain-redol {
+      width: 100px;
+      height: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+      right: auto;
+    }
+
+    .pain-redol-1 {
+      top: -50px;
+    }
+
+    .pain-redol-2 {
+      top: auto;
+      bottom: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .pain-redol-3 {
+      bottom: auto;
+      top: -50px;
+    }
+
+    .pain-card-button {
+      width: 100%;
+      padding: 10px 16px;
+      font-size: 12px;
+      margin-top: 8px;
+    }
+
+    .pain-points-timeline {
+      display: none !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .pain-points {
+      padding: 24px 12px;
+      margin-left: 0;
+      width: 100%;
+      overflow-x: hidden;
+    }
+
+    .pain-points-wrapper {
+      gap: 24px;
+      width: 100%;
+    }
+
+    .pain-points-header {
+      gap: 16px;
+      width: 100%;
+    }
+
+    .pain-points-content {
+      margin-left: 0;
+      width: 100%;
+    }
+
+    .pain-points-title {
+      font-size: 22px;
+      margin: 0 0 10px 0;
+      line-height: 110%;
+    }
+
+    .pain-points-subtitle {
+      font-size: 12px;
+      line-height: 140%;
+    }
+
+    .pain-points-logo {
+      position: relative;
+      width: 70px;
+      height: 70px;
+      left: auto;
+      top: auto;
+      transform: none;
+    }
+
+    .pain-points-logo-img {
+      position: relative;
+      top: auto;
+      left: auto;
+      width: 90px;
+      height: 110px;
+      padding: 6px;
+    }
+
+    .pain-card {
+      width: calc(100% - 16px);
+      max-width: calc(100vw - 28px);
+      height: auto;
+      padding: 10px 8px;
+      gap: 8px;
+      margin: 0 auto 16px;
+      border-width: 3px;
+      border-radius: 16px;
+    }
+
+    .pain-card-left {
+      width: 100%;
+      padding: 12px 10px;
+      height: auto;
+      gap: 10px;
+    }
+
+    .pain-card-right {
+      width: 100%;
+      padding: 10px;
+      height: auto;
+    }
+
+    .pain-card-image {
+      width: 100%;
+      height: auto;
+      max-height: 200px;
+      object-fit: contain;
+    }
+
+    .pain-card-title {
+      font-size: 16px;
+      margin: 0;
+      line-height: 110%;
+    }
+
+    .pain-card-text {
+      font-size: 11px;
+      width: 100%;
+      line-height: 140%;
+      margin: 0;
+    }
+
+    .pain-card-warning {
+      width: 28px;
+      height: 28px;
+      flex-shrink: 0;
+    }
+
+    .pain-redol {
+      width: 80px;
+      height: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0.6;
+    }
+
+    .pain-redol-1,
+    .pain-redol-2,
+    .pain-redol-3 {
+      top: -40px !important;
+      bottom: auto !important;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .pain-card-button {
+      width: 100%;
+      padding: 8px 12px;
+      font-size: 11px;
+      margin-top: 6px;
+      border-radius: 10px;
+    }
+
+    .timeline-dot {
+      width: 10px;
+      height: 10px;
+    }
+
+    .timeline-dot-active {
+      width: 14px;
+      height: 14px;
+    }
+
+    .pain-points-timeline {
+      display: none !important;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .pain-points {
+      padding: 20px 10px;
+    }
+
+    .pain-points-title {
+      font-size: 20px;
+    }
+
+    .pain-points-subtitle {
+      font-size: 11px;
+    }
+
+    .pain-card {
+      width: calc(100% - 12px);
+      max-width: calc(100vw - 22px);
+      padding: 8px 6px;
+      gap: 6px;
+    }
+
+    .pain-card-left {
+      padding: 10px 8px;
+      gap: 8px;
+    }
+
+    .pain-card-right {
+      padding: 8px;
+    }
+
+    .pain-card-image {
+      max-height: 180px;
+    }
+
+    .pain-card-title {
+      font-size: 14px;
+    }
+
+    .pain-card-text {
+      font-size: 10px;
+    }
+
+    .pain-card-warning {
+      width: 24px;
+      height: 24px;
+    }
+
+    .pain-redol {
+      width: 70px;
+      height: 70px;
+      opacity: 0.5;
+    }
+
+    .pain-card-button {
+      font-size: 10px;
+      padding: 6px 10px;
     }
   }
 }
