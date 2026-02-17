@@ -19,7 +19,7 @@ import Icon7 from "./assets/matrixSvg/Notion-Logo-3990560502 1.svg";
 function Blok() {
   return (
     <>
-      <div>
+      <div id="briefix-agents">
         <div className="blok-container-1">
           <div className="blok-header">
             <h1>Briefix Agents can handle:</h1>

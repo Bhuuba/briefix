@@ -100,28 +100,8 @@ function PainPoints() {
         }
       });
 
-      // Рухати логотип
-      if (wrapperRef.current) {
-        const wrapperRect = wrapperRef.current.getBoundingClientRect();
-        const wrapperTop = wrapperRect.top + window.scrollY;
-        const wrapperHeight = wrapperRect.height;
-        const sectionHeight = window.innerHeight;
-
-        // Обчислити прогрес (0 до 1) скролу через секцію
-        const scrollStart = wrapperTop;
-        const scrollEnd = wrapperTop + wrapperHeight - sectionHeight;
-        const progress = Math.max(
-          0,
-          Math.min(
-            1,
-            (currentScrollY - scrollStart) / (scrollEnd - scrollStart),
-          ),
-        );
-
-        // Макс переміщення логотипу (він може їздити на 1000px в межах контейнера)
-        const maxOffset = wrapperHeight - 300; // 300px - це висота логотипу
-        setLogoOffset(progress * maxOffset);
-      }
+      // Логотип залишається на місці
+      setLogoOffset(0);
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -129,7 +109,7 @@ function PainPoints() {
   }, []);
 
   return (
-    <section className="pain-points">
+    <section id="use-cases" className="pain-points">
       <div className="pain-points-wrapper" ref={wrapperRef}>
         <div className="pain-points-header">
           <div className="pain-points-content">

@@ -20,7 +20,7 @@ function Hero() {
 
           <div className="hero-buttons">
             <button className="hero-btn hero-btn-primary">Book Demo</button>
-            <button className="hero-btn hero-btn-secondary">
+            <button id="meet-brixy" className="hero-btn hero-btn-secondary">
               Meet Brixy 🎉
             </button>
           </div>
