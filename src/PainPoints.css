@@ -7,7 +7,12 @@
   padding: 80px 60px;
   min-height: auto;
   margin-left: 79px;
-  margin-top: -196px;
+}
+
+@media (min-width: 1000px) {
+  .pain-points {
+    margin-top: -196px;
+  }
 }
 .pain-points-wrapper {
   width: 100%;
@@ -700,71 +705,59 @@
 }
 
 @media (max-width: 375px) {
-    .pain-points {
-      padding: 20px 10px;
-    }
-
-    .pain-points-title {
-      font-size: 20px;
-    }
-
-    .pain-points-subtitle {
-      font-size: 11px;
-    }
-
-    .pain-card {
-      width: calc(100% - 12px);
-      max-width: calc(100vw - 22px);
-      padding: 8px 6px;
-      gap: 6px;
-    }
-
-    .pain-card-left {
-      padding: 10px 8px;
-      gap: 8px;
-    }
-
-    .pain-card-right {
-      padding: 8px;
-    }
-
-    .pain-card-image {
-      max-height: 180px;
-    }
-
-    .pain-card-title {
-      font-size: 14px;
-    }
-
-    .pain-card-text {
-      font-size: 10px;
-    }
-
-    .pain-card-warning {
-      width: 24px;
-      height: 24px;
-    }
-
-    .pain-redol {
-      width: 70px;
-      height: 70px;
-      opacity: 0.5;
-    }
-
-    .pain-card-button {
-      font-size: 10px;
-      padding: 6px 10px;
-    }
+  .pain-points {
+    padding: 20px 10px;
   }
-}
 
-@media (max-width: 1000px) {
-  .blok-header h1 {
-    font-family: "Manrope", sans-serif;
-    font-weight: 700;
-    font-size: 34px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    color: #1a1a1a;
+  .pain-points-title {
+    font-size: 20px;
+  }
+
+  .pain-points-subtitle {
+    font-size: 11px;
+  }
+
+  .pain-card {
+    width: calc(100% - 12px);
+    max-width: calc(100vw - 22px);
+    padding: 8px 6px;
+    gap: 6px;
+  }
+
+  .pain-card-left {
+    padding: 10px 8px;
+    gap: 8px;
+  }
+
+  .pain-card-right {
+    padding: 8px;
+  }
+
+  .pain-card-image {
+    max-height: 180px;
+  }
+
+  .pain-card-title {
+    font-size: 14px;
+  }
+
+  .pain-card-text {
+    font-size: 10px;
+  }
+
+  .pain-card-warning {
+    width: 24px;
+    height: 24px;
+  }
+
+  .pain-redol {
+    width: 70px;
+    height: 70px;
+    opacity: 0.5;
+  }
+
+  .pain-card-button {
+    font-size: 10px;
+    padding: 6px 10px;
   }
 }
