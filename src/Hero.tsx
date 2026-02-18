@@ -26,14 +26,7 @@ function Hero() {
           </div>
         </div>
 
-        <div
-          className="hero-illustration"
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
+        <div className="hero-illustration">
           <img
             src={heroImg}
             alt="hero illustration"

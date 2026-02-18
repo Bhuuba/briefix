@@ -99,7 +99,7 @@
   justify-content: center;
   gap: 40px;
   width: 100%;
-  max-width: 1440px;
+  max-width: 1182px;
   margin: 0 auto;
   position: relative;
   transform: translateY(-50px) translateX(-30px);
@@ -280,9 +280,7 @@
   }
 
   .hero-illustration {
-    flex-direction: column;
-    gap: 30px;
-    transform: translateY(-30px) translateX(0);
+    display: none !important;
   }
 
   .hero-illustration-left,

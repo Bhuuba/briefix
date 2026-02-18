@@ -17,7 +17,15 @@ function Header() {
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
       const header = document.querySelector(".header-wrapper");
-      if (header && !header.contains(e.target as Node)) {
+      const headerRight = document.querySelector(".header-right");
+      const hamburger = document.querySelector(".header-hamburger");
+
+      // Закрити меню якщо клацнути на оверлей (на .header-right::before)
+      if (
+        menuOpen &&
+        !header?.contains(e.target as Node) &&
+        !hamburger?.contains(e.target as Node)
+      ) {
         setMenuOpen(false);
       }
     };

@@ -477,3 +477,9 @@
   margin-top: -6px;
   margin-left: -52px;
 }
+
+@media (max-width: 1000px) {
+  .blok-header h1 {
+    margin-left: 0;
+  }
+}
