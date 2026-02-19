@@ -480,6 +480,25 @@
 
 @media (max-width: 1000px) {
   .blok-header h1 {
-    margin-left: 0;
+    margin-left: -248px;
+  }
+
+  .blok-container-1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 38px;
+    padding: 0;
+    max-width: 1440px;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 550px) {
+  .blok-header h1 {
+    margin-left: 37px;
+    font-size: 26px;
   }
 }

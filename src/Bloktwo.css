@@ -290,6 +290,28 @@
   }
 }
 
+@media (max-width: 900px) {
+  .bloktwo-cards-wrapper {
+    flex-direction: row;
+    gap: 20px;
+    height: auto;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 10px 0;
+  }
+
+  .bloktwo-card {
+    flex-shrink: 0;
+  }
+
+  .bloktwo-card-1,
+  .bloktwo-card-2,
+  .bloktwo-card-3 {
+    align-self: center !important;
+    margin-bottom: 0 !important;
+  }
+}
+
 @media (max-width: 768px) {
   .bloktwo-container {
     width: 100%;
@@ -320,6 +342,41 @@
     flex-wrap: wrap;
     height: auto;
     gap: 30px;
+  }
+
+  .bloktwo-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .bloktwo-card-1,
+  .bloktwo-card-2,
+  .bloktwo-card-3 {
+    align-self: center !important;
+    margin-bottom: 0 !important;
+  }
+
+  .bloktwo-connector-horizontal {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .bloktwo-container {
+    width: 100%;
+    padding: 60px 15px;
+    gap: 40px;
+  }
+
+  .bloktwo-grid-bg {
+    padding: 40px 20px;
+  }
+
+  .bloktwo-cards-wrapper {
+    flex-wrap: wrap;
+    height: auto;
+    gap: 30px;
+    justify-content: center;
   }
 
   .bloktwo-card {

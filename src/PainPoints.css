@@ -496,12 +496,94 @@
   }
 }
 
+@media (max-width: 900px) {
+  .pain-points {
+    width: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 60px;
+    min-height: auto;
+    margin-left: 0px;
+    margin-top: -192px;
+  }
+
+  .pain-points-wrapper {
+    gap: 40px;
+  }
+
+  .pain-points-header {
+    gap: 30px;
+  }
+
+  .pain-points-title {
+    font-size: 40px;
+  }
+
+  .pain-points-subtitle {
+    font-size: 18px;
+  }
+
+  .pain-card {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .pain-points {
+    padding: 40px 20px;
+  }
+
+  .pain-points-logo-img {
+    display: none;
+  }
+
+  .pain-points-title {
+    font-size: 32px;
+  }
+
+  .pain-points-subtitle {
+    font-size: 16px;
+  }
+
+  .pain-card {
+    height: auto;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .pain-card-left {
+    width: 100%;
+  }
+
+  .pain-card-right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .pain-points {
+    width: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 60px;
+    min-height: auto;
+    margin-left: 0px;
+    margin-top: -44px;
+  }
+}
+
 @media (max-width: 480px) {
   .pain-points {
-    padding: 24px 12px;
+    /* padding: 24px 12px; */
     margin-left: 0;
     width: 100%;
     overflow-x: hidden;
+    margin-top: -44px;
   }
 
   .pain-points-wrapper {
@@ -635,72 +717,6 @@
 
   .pain-points-timeline {
     display: none !important;
-  }
-}
-
-@media (max-width: 900px) {
-  .pain-points {
-    width: 100%;
-    background: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 80px 60px;
-    min-height: auto;
-    margin-left: 0px;
-  }
-
-  .pain-points-wrapper {
-    gap: 40px;
-  }
-
-  .pain-points-header {
-    gap: 30px;
-  }
-
-  .pain-points-title {
-    font-size: 40px;
-  }
-
-  .pain-points-subtitle {
-    font-size: 18px;
-  }
-
-  .pain-card {
-    height: auto;
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 700px) {
-  .pain-points {
-    padding: 40px 20px;
-  }
-
-  .pain-points-logo-img {
-    display: none;
-  }
-
-  .pain-points-title {
-    font-size: 32px;
-  }
-
-  .pain-points-subtitle {
-    font-size: 16px;
-  }
-
-  .pain-card {
-    height: auto;
-    flex-direction: column;
-    max-width: 100%;
-  }
-
-  .pain-card-left {
-    width: 100%;
-  }
-
-  .pain-card-right {
-    width: 100%;
   }
 }
 
