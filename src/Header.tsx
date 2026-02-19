@@ -17,7 +17,6 @@ function Header() {
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
       const header = document.querySelector(".header-wrapper");
-      const headerRight = document.querySelector(".header-right");
       const hamburger = document.querySelector(".header-hamburger");
 
       // Закрити меню якщо клацнути на оверлей (на .header-right::before)
