@@ -8,7 +8,6 @@ import illustration from "./assets/pagePortfolio/learnmoone/AINewsDigests.png";
 import problemIcon from "./assets/pagePortfolio/learnmoone/PROBLEM.png";
 import solutionIcon from "./assets/pagePortfolio/learnmoone/SOLUTION.png";
 import mainIllustration from "./assets/pagePortfolio/learnmoone/maintwoblok.png";
-import numbersCol from "./assets/pagePortfolio/learnmoone/leftrowonetwotherrefour.png";
 import step1Icon from "./assets/pagePortfolio/learnmoone/data-collection 1.png";
 import step2Icon from "./assets/pagePortfolio/learnmoone/data-analysis 1.png";
 import step3Icon from "./assets/pagePortfolio/learnmoone/encryption 1.png";
