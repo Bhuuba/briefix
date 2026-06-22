@@ -1,0 +1,251 @@
+.portfolio-page {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px 100px 120px;
+}
+
+/* Hero */
+.portfolio-hero {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.portfolio-title {
+  font-family: Manrope;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 110%;
+  color: #0f172a;
+  margin: 0 0 16px;
+}
+
+.portfolio-title-blue {
+  color: #2563eb;
+}
+
+.portfolio-subtitle {
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 400;
+  color: #64748b;
+  margin: 0;
+}
+
+/* Tabs */
+.portfolio-tabs-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 56px;
+}
+
+.portfolio-tabs {
+  display: flex;
+  gap: 60px;
+  margin-bottom: 12px;
+}
+
+.portfolio-tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 500;
+  color: #64748b;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.2s;
+}
+
+.portfolio-tab.active {
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.portfolio-tab:hover {
+  color: #0f172a;
+}
+
+/* Tab indicator line with dots */
+.portfolio-tab-track {
+  position: relative;
+  width: 440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.portfolio-tab-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1.5px;
+  background: #e2e8f0;
+  transform: translateY(-50%);
+}
+
+.portfolio-tab-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1.5px solid #cbd5e1;
+  background: white;
+  position: relative;
+  z-index: 1;
+  transition: all 0.2s;
+}
+
+.portfolio-tab-dot.active {
+  background: #2563eb;
+  border-color: #2563eb;
+}
+
+/* Cards grid */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.portfolio-card {
+  background: white;
+  border-radius: 24px;
+  border: 1.5px solid #f1f5f9;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 36px;
+  gap: 24px;
+  min-height: 300px;
+  transition: box-shadow 0.2s;
+}
+
+.portfolio-card-body {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 24px;
+  flex: 1;
+}
+
+.portfolio-card:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-card.featured {
+    /* border: 2px solid #2563eb; */
+}
+
+.portfolio-card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 0;
+}
+
+.portfolio-card-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: Manrope;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 20px;
+  width: fit-content;
+  color: white;
+}
+
+.tag-media {
+  background: #2563eb;
+}
+
+.tag-hr {
+    background: #2563eb;
+}
+
+.tag-analytics {
+    background: #2563eb;
+}
+
+.portfolio-card-title {
+  font-family: Manrope;
+  font-weight: 700;
+  font-size: 28px;
+  color: #0f172a;
+  margin: 0;
+  line-height: 125%;
+  white-space: pre-line;
+}
+
+.portfolio-card-desc {
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 400;
+  color: #64748b;
+  margin: 0;
+  line-height: 160%;
+  max-width: 199px;
+}
+
+.portfolio-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.portfolio-card-tech {
+  font-family: Manrope;
+  font-size: 13px;
+  color: #94a3b8;
+  font-weight: 400;
+}
+
+.portfolio-card-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2563eb;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: gap 0.2s;
+}
+
+.portfolio-card-link:hover {
+  gap: 10px;
+}
+
+.portfolio-card-img {
+  width: 200px;
+  height: 180px;
+  object-fit: contain;
+  flex-shrink: 0;
+  align-self: center;
+}
+
+@media (max-width: 900px) {
+  .portfolio-page {
+    padding: 60px 24px 80px;
+  }
+  .portfolio-title {
+    font-size: 36px;
+  }
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+  .portfolio-tabs {
+    gap: 24px;
+  }
+  .portfolio-tab-track {
+    width: 280px;
+  }
+}

@@ -77,6 +77,11 @@
   color: #000000;
 }
 
+.header-nav a.nav-active {
+  color: #2563eb;
+  font-weight: 700;
+}
+
 .header-button {
   font-family: Manrope;
   font-weight: 600;

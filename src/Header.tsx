@@ -2,7 +2,7 @@ import "./Header.css";
 import { useState, useEffect } from "react";
 import briefixLogo from "./assets/header/logo 1 (2).png";
 
-function Header() {
+function Header({ currentPage }: { currentPage: string }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -71,11 +71,18 @@ function Header() {
 
         <div className={`header-right ${menuOpen ? "mobile-open" : ""}`}>
           <nav className="header-nav">
-            <a href="#briefix-agents" onClick={closeMenu}>
+            <a href="#" onClick={closeMenu}>
               Home
             </a>
-            <a href="#use-cases" onClick={closeMenu}>
+            <a href="#use-cases" onClick={closeMenu} className={currentPage === "use-cases" ? "nav-active" : ""}>
               Use Cases
+            </a>
+            <a
+              href="#portfolio"
+              onClick={closeMenu}
+              className={currentPage === "portfolio" ? "nav-active" : ""}
+            >
+              Portfolio
             </a>
             <a href="#meet-brixy" onClick={closeMenu}>
               Meet Brixy

@@ -1,7 +1,7 @@
 .bloktwo-container {
   width: 1440px;
   margin: 0 auto;
-  padding: 80px 20px;
+  padding: 80px 0px 0px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,15 +28,15 @@
 }
 
 .bloktwo-title {
-  position: relative;
-  font-family: Manrope;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  margin: 0px 0 -24px -804px;
-  color: #000;
-  text-align: left;
+    position: relative;
+    font-family: Manrope;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin: 0px 0 -42px -810px;
+    color: #000;
+    text-align: left;
 }
 
 .bloktwo-highlight {
@@ -45,39 +45,16 @@
 
 /* Фон в клітинку */
 .bloktwo-grid-bg {
-  width: 100%;
-  background-image:
-    linear-gradient(
-      0deg,
-      transparent 24%,
-      rgba(200, 200, 200, 0.2) 25%,
-      rgba(200, 200, 200, 0.2) 26%,
-      transparent 27%,
-      transparent 74%,
-      rgba(200, 200, 200, 0.2) 75%,
-      rgba(200, 200, 200, 0.2) 76%,
-      transparent 77%,
-      transparent
-    ),
-    linear-gradient(
-      90deg,
-      transparent 24%,
-      rgba(200, 200, 200, 0.2) 25%,
-      rgba(200, 200, 200, 0.2) 26%,
-      transparent 27%,
-      transparent 74%,
-      rgba(200, 200, 200, 0.2) 75%,
-      rgba(200, 200, 200, 0.2) 76%,
-      transparent 77%,
-      transparent
-    );
-  background-size: 50px 50px;
-  padding: 60px 40px;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
+    width: 100%;
+    background-color: #d9e8ffba;
+    background-image: linear-gradient(rgba(191, 219, 254, 0.4) 1px, #00000000 1px), linear-gradient(90deg, rgb(191 219 254 / 69%) 1px, #00000000 1px);
+    background-size: 24px 24px;
+    padding: 80px 25px 37px 25px;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
 }
 
 /* Карточки в ряд */
@@ -92,32 +69,21 @@
   margin: 0 auto;
   height: 450px;
 }
-.bloktwo-cards-wrapper::before,
-.bloktwo-cards-wrapper::after {
-  content: "";
+.bloktwo-connectors-svg {
   position: absolute;
-  height: 2px;
-  background-image: repeating-linear-gradient(
-    125deg,
-    #c0c0c0 0px,
-    #c0c0c0 8px,
-    transparent 5px,
-    transparent 16px
-  );
-  top: 34%;
-  width: 174px;
-  z-index: 0;
-  transform-origin: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  overflow: visible;
 }
 
-.bloktwo-cards-wrapper::before {
-  left: 24%;
-  transform: skewY(-8deg);
-}
-
-.bloktwo-cards-wrapper::after {
-  right: 18%;
-  transform: skewY(8deg);
+@media (max-width: 900px) {
+  .bloktwo-connectors-svg {
+    display: none;
+  }
 }
 .bloktwo-card {
   background: transparent;
@@ -179,13 +145,14 @@
 .bloktwo-card-bottom {
   background: white;
   border-radius: 0 0 25px 25px;
-  padding: 20px 20px 24px 20px;
+  padding: 24px 20px 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  margin-top: -26px;
+  margin-top: -20px;
+  padding-top: 28px;
   position: relative;
   z-index: 1;
   width: 270px;
-  height: 96.41px;
+  min-height: 96px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -232,15 +199,14 @@
 }
 
 .bloktwo-card-text {
-  font-family: Inter;
+  font-family: Manrope;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 100%;
+  font-size: 15px;
+  line-height: 145%;
   letter-spacing: 0%;
   text-align: center;
   margin: 0;
-  margin-top: 31px;
-  color: #1a1a1a;
+  color: #374151;
 }
 
 .bloktwo-connector-horizontal {
@@ -253,9 +219,9 @@
   border: none;
   border-radius: 24px;
   padding: 14px 32px;
-  font-family: Inter;
+  font-family: Manrope, sans-serif;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
@@ -470,17 +436,3 @@
   }
 }
 
-.bloktwo-card-bottom {
-  background: white;
-  border-radius: 0 0 25px 25px;
-  padding: 20px 20px 24px 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  margin-top: -40px;
-  position: relative;
-  z-index: 1;
-  width: 270px;
-  height: 96.41px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}

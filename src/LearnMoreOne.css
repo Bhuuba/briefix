@@ -1,0 +1,494 @@
+.lm1-page {
+  min-height: 100vh;
+  background: white;
+  padding: 0;
+}
+
+.lm1-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 80px 80px;
+}
+
+.lm1-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: Manrope;
+  font-size: 15px;
+  font-weight: 500;
+  color: #64748b;
+  text-decoration: none;
+  margin-bottom: 48px;
+  transition: color 0.2s;
+}
+
+.lm1-back:hover {
+  color: #0f172a;
+}
+
+.lm1-content {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.lm1-left {
+  flex: 0 0 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.lm1-media-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: Manrope;
+  font-size: 15px;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+.lm1-media-icon {
+  width: 41px;
+  height: 41px;
+  object-fit: contain;
+  padding: 5px;
+  border-radius: 7px;
+  /* box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18); */
+}
+
+.lm1-title {
+  font-family: Manrope;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 110%;
+  color: #0f172a;
+  margin: 0;
+}
+
+.lm1-tech-img {
+  width: 100%;
+  max-width: 380px;
+  object-fit: contain;
+}
+
+.lm1-desc {
+  font-family: Manrope;
+  font-size: 17px;
+  font-weight: 400;
+  color: #475569;
+  line-height: 160%;
+  margin: 0;
+  max-width: 380px;
+}
+
+/* Client card */
+.lm1-client-card {
+  background: #f8fafc;
+  border-left: 3px solid #2563eb;
+  border-radius: 12px;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+}
+
+.lm1-client-label {
+  font-family: Manrope;
+  font-size: 11px;
+  font-weight: 700;
+  color: #94a3b8;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.lm1-client-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.lm1-client-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.lm1-client-name {
+  font-family: Manrope;
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 130%;
+}
+
+.lm1-client-text {
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 400;
+  color: #64748b;
+  line-height: 155%;
+  margin: 0;
+}
+
+/* Illustration */
+.lm1-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lm1-illustration {
+  width: 100%;
+  max-width: 520px;
+  object-fit: contain;
+}
+
+/* Block 2 — Problem & Solution */
+.lm1-block2 {
+  /* background: #f8fafc; */
+  /* padding: 80px 0; */
+  position: relative;
+  overflow: hidden;
+}
+
+.lm1-block2-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 78px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.lm1-problem-card,
+.lm1-solution-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  padding: 28px 28px;
+  width: 260px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.lm1-problem-card {
+  margin-top: -200px;
+}
+
+.lm1-solution-card {
+  margin-top: 250px;
+}
+
+.lm1-ps-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.lm1-ps-icon {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.lm1-ps-label {
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: 0.5px;
+}
+
+.lm1-ps-text {
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 400;
+  color: #475569;
+  line-height: 160%;
+  margin: 0;
+}
+
+.lm1-block2-center {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lm1-block2-img {
+  width: 100%;
+  max-width: 500px;
+  object-fit: contain;
+}
+
+@media (max-width: 900px) {
+  .lm1-block2-inner {
+    flex-direction: column;
+    padding: 0 24px;
+  }
+  .lm1-problem-card,
+  .lm1-solution-card {
+    width: 100%;
+  }
+}
+
+/* Block 3 — How It Works */
+.lm1-block3 {
+  padding: 80px 80px 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.lm1-block3-title {
+  font-family: Manrope;
+  font-weight: 700;
+  font-size: 40px;
+  color: #0f172a;
+  text-align: center;
+  margin: 0 0 56px;
+}
+
+.lm1-blue {
+  color: #2563eb;
+}
+
+.lm1-block3-body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Each step row: number col + card */
+.lm1-step-row {
+  display: flex;
+  align-items: stretch;
+  gap: 32px;
+}
+
+.lm1-step-num-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+  flex-shrink: 0;
+}
+
+.lm1-step-num {
+  font-family: Manrope;
+  font-weight: 800;
+  font-size: 52px;
+  color: #dbeafe;
+  line-height: 1;
+  padding-bottom: 8px;
+  padding-top: 38px;
+}
+
+.lm1-step-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2.5px solid #2563eb;
+  background: white;
+  flex-shrink: 0;
+}
+
+.lm1-step-line {
+  width: 2px;
+  flex: 1;
+  border-left: 2px dashed #cbd5e1;
+}
+
+.lm1-step-card {
+  background: #f0f6ff;
+  border-radius: 16px;
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.lm1-step-icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.lm1-step-title {
+  font-family: Manrope;
+  font-weight: 700;
+  font-size: 18px;
+  color: #0f172a;
+  margin: 0;
+}
+
+.lm1-step-desc {
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 400;
+  color: #64748b;
+  line-height: 155%;
+  margin: 0;
+}
+
+/* Block 4 — Impact */
+.lm1-block4 {
+  padding: 80px 0;
+  min-height: 756px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.lm1-block4-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 80px;
+  position: relative;
+}
+
+.lm1-blur-circle {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.lm1-blur-left {
+  left: -40px;
+  top: 100px;
+}
+
+.lm1-blur-right {
+  right: -40px;
+  top: 20px;
+  width: 360px;
+  height: 360px;
+}
+
+.lm1-blur-center {
+  left: 50%;
+  bottom: -60px;
+  transform: translateX(-50%);
+}
+
+.lm1-block4-title,
+.lm1-block4-sub,
+.lm1-impact-cards {
+  position: relative;
+  z-index: 1;
+}
+
+.lm1-block4-title {
+  font-family: Manrope;
+  font-weight: 700;
+  font-size: 40px;
+  color: #0f172a;
+  text-align: center;
+  margin: 0 0 12px;
+}
+
+.lm1-block4-sub {
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 400;
+  color: #64748b;
+  text-align: center;
+  margin: 0 0 156px;
+}
+
+.lm1-impact-cards {
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  margin-bottom: 130px;
+}
+
+.lm1-impact-card {
+  background: white;
+  border-radius: 24px;
+  flex: 1;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  transition: box-shadow 0.25s, transform 0.25s;
+  cursor: default;
+}
+
+.lm1-impact-card:hover {
+  box-shadow: 0 12px 40px rgba(37, 99, 235, 0.14);
+  transform: translateY(-6px);
+}
+
+.lm1-impact-icon-section {
+  height: 170px;
+  background: linear-gradient(90deg, rgba(219, 234, 254, 0) 0%, #dbeafe 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.lm1-impact-icon {
+  display: block;
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+}
+
+.lm1-impact-card-body {
+  padding: 24px 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.lm1-impact-card-title {
+  font-family: Manrope;
+  font-weight: 700;
+  font-size: 20px;
+  color: #0f172a;
+  margin: 0;
+}
+
+.lm1-impact-card-desc {
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 400;
+  color: #64748b;
+  line-height: 155%;
+  margin: 0;
+}
+
+/* --- existing responsive --- */
+@media (max-width: 900px) {
+  .lm1-inner {
+    padding: 32px 24px 60px;
+  }
+  .lm1-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .lm1-left {
+    flex: none;
+    width: 100%;
+  }
+  .lm1-title {
+    font-size: 36px;
+  }
+}

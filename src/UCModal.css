@@ -1,0 +1,197 @@
+.uc-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.uc-modal {
+  background: white;
+  border-radius: 28px;
+  padding: 36px 44px 44px;
+  width: 100%;
+  max-width: 740px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.18);
+}
+
+/* Tag row */
+.uc-modal-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.uc-modal-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #94a3b8;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+.uc-modal-close:hover { color: #0f172a; }
+
+/* Title + desc */
+.uc-modal-title {
+  font-family: Manrope;
+  font-weight: 700;
+  font-size: 28px;
+  color: #0f172a;
+  margin: 0 0 8px;
+  line-height: 120%;
+}
+
+.uc-modal-desc {
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 400;
+  color: #64748b;
+  line-height: 155%;
+  margin: 0 0 28px;
+  width: 357px;
+}
+
+/* Middle: [cols] + [char] */
+.uc-modal-middle {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 36px;
+}
+
+.uc-modal-cols {
+  display: flex;
+  gap: 40px;
+  flex: 1;
+}
+
+.uc-modal-col {
+  flex: 1;
+}
+
+.uc-modal-col-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.uc-modal-col-icon {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+.uc-modal-col-title {
+  font-family: Manrope;
+  font-weight: 700;
+  font-size: 15px;
+  color: #0f172a;
+}
+
+.uc-modal-bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.uc-modal-bullets li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 400;
+  color: #334155;
+}
+
+.uc-modal-bullets li::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #2563eb;
+  flex-shrink: 0;
+}
+
+.uc-modal-char {
+  width: 200px;
+  height: 190px;
+  object-fit: contain;
+  flex-shrink: 0;
+  margin-top: -48px;
+}
+
+/* Levels */
+.uc-modal-levels-title {
+  font-family: Manrope;
+  font-weight: 700;
+  font-size: 17px;
+  color: #0f172a;
+  text-align: center;
+  margin: 0 0 18px;
+}
+
+.uc-modal-levels {
+  display: flex;
+  gap: 14px;
+}
+
+.uc-modal-level-card {
+  flex: 1;
+  border-radius: 16px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.uc-modal-level-card.base     { background: #f0fdf4; }
+.uc-modal-level-card.advanced { background: #f5f3ff; }
+.uc-modal-level-card.expert   { background: #fff7ed; }
+
+.uc-modal-level-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.uc-modal-level-icon {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+.uc-modal-level-name {
+  font-family: Manrope;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.uc-modal-level-card.base     .uc-modal-level-name { color: #16a34a; }
+.uc-modal-level-card.advanced .uc-modal-level-name { color: #7c3aed; }
+.uc-modal-level-card.expert   .uc-modal-level-name { color: #ea580c; }
+
+.uc-modal-level-desc {
+  font-family: Manrope;
+  font-size: 13px;
+  font-weight: 400;
+  color: #475569;
+  line-height: 155%;
+  margin: 0;
+}

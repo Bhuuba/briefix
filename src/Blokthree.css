@@ -1,62 +1,79 @@
 .blokthree-container {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
-  background-image:
-    linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%),
-    url("./assets/Code_Pattern.png");
-  background-size: cover, auto;
-  background-position: center, center;
-  background-blend-mode: overlay;
-  padding: 100px 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 600px;
-  position: relative;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #e4f0ff94;
+    padding: 100px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+.blokthree-code-bg {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  padding: 16px 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10.5px;
+  line-height: 1.65;
+  color: rgba(29, 78, 216, 0.13);
+  white-space: pre-wrap;
+  word-break: normal;
+  column-count: 5;
+  column-gap: 0;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+  border: none;
+  background: none;
 }
 
 .blokthree-content {
-  max-width: 900px;
+  max-width: 800px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 32px;
   position: relative;
   z-index: 1;
 }
 
+/* Цитата — blockquote стиль з лівою синьою лінією */
 .blokthree-quote {
-  background: white;
-  border-radius: 24px;
-  padding: 20px 20px;
-  max-width: 650px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    background: none;
+    border-left: 2px solid #2563eb;
+    border-radius: 0;
+    padding: 4px 0 4px 20px;
+    max-width: 693px;
+    box-shadow: none;
 }
 
 .blokthree-quote-text {
-  font-family: Manrope;
-  font-weight: 500;
-  font-size: 25px;
-  line-height: 140%;
-  letter-spacing: 0%;
-  margin: 0;
-  color: #1a1a1a;
-  text-align: left;
-  word-wrap: break-word;
-  word-break: break-word;
+    font-family: Manrope;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 155%;
+    margin: 0;
+    color: #1e293b;
+    text-align: left;
+    word-wrap: break-word;
 }
 
 .blokthree-quote-mark {
-  color: #2b7fff;
-  font-weight: 700;
-  font-size: 24px;
+    color: #2563eb;
+    font-weight: 700;
+    font-size: 35px;
 }
 
 .blokthree-quote-bold {
   font-weight: 700;
-  color: #1a1a1a;
+  color: #1e293b;
 }
 
 .blokthree-title {
@@ -64,96 +81,81 @@
   font-weight: 700;
   font-size: 64px;
   line-height: 110%;
-  letter-spacing: 0%;
-  color: white;
+  color: #0f172a;
   text-align: center;
   margin: 0;
-  max-width: 100%;
   white-space: nowrap;
 }
 
 .blokthree-highlight {
-  background: white;
-  color: #1a1a1a;
-  border-radius: -1px;
-  display: inline-block;
+  color: #2563eb;
   font-weight: 700;
+  display: inline;
 }
 
 .blokthree-subtitle {
   font-family: Manrope;
   font-weight: 500;
-  font-size: 32px;
+  font-size: 22px;
   line-height: 150%;
-  letter-spacing: 0%;
-  color: rgba(255, 255, 255, 0.95);
+  color: #334155;
   text-align: center;
   margin: 0;
-  max-width: 100%;
   white-space: nowrap;
 }
 
 .blokthree-buttons {
   display: flex;
-  gap: 24px;
+  gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin-top: 8px;
 }
 
 .blokthree-btn {
   font-family: Manrope;
   font-weight: 600;
   font-size: 16px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  border: none;
   border-radius: 28px;
-  padding: 12px 36px;
+  padding: 14px 36px;
   cursor: pointer;
   transition: all 0.3s ease;
   white-space: nowrap;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 .blokthree-btn-primary {
-  background: #2b7fff;
+  background: #2563eb;
   color: white;
+  border: none;
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.3);
 }
 
 .blokthree-btn-primary:hover {
-  background: white;
-  color: #2563eb;
-  transform: translateY(-3px);
-  box-shadow: 0 12px 32px rgba(37, 99, 235, 0.4);
+  background: #1d4ed8;
+  transform: translateY(-2px);
 }
 
 .blokthree-btn-secondary {
   background: white;
-  border: 2px solid white;
-  font-weight: 700;
-  width: 362px;
-  height: 54px;
-  font-size: 20px;
+  border: 2px solid #cbd5e1;
+  color: #0f172a;
+  font-weight: 600;
 }
 
 .blokthree-btn-secondary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
-  background: rgba(255, 255, 255, 0.9);
+  border-color: #94a3b8;
+  transform: translateY(-2px);
 }
 
 @media (max-width: 1024px) {
   .blokthree-container {
-    padding: 80px 60px;
+    padding: 80px 40px;
   }
-
   .blokthree-title {
     font-size: 48px;
   }
-
   .blokthree-subtitle {
-    font-size: 24px;
+    font-size: 18px;
   }
 }
 
@@ -162,104 +164,56 @@
     padding: 60px 20px;
     min-height: auto;
   }
-
+  .blokthree-content {
+    max-width: 100%;
+    align-items: flex-start;
+  }
   .blokthree-quote {
     max-width: 100%;
-    padding: 16px;
-    border-radius: 16px;
   }
-
   .blokthree-quote-text {
-    font-size: 18px;
-    line-height: 130%;
+    font-size: 15px;
   }
-
   .blokthree-title {
     font-size: 36px;
     white-space: normal;
   }
-
   .blokthree-subtitle {
-    font-size: 20px;
+    font-size: 17px;
     white-space: normal;
   }
-
   .blokthree-buttons {
     flex-direction: column;
     width: 100%;
   }
-
   .blokthree-btn {
     width: 100%;
-  }
-
-  .blokthree-btn-primary {
-    padding: 12px 28px;
-  }
-
-  .blokthree-btn-secondary {
-    width: 100%;
-    height: 48px;
-    font-size: 16px;
+    text-align: center;
   }
 }
 
 @media (max-width: 480px) {
   .blokthree-container {
     padding: 40px 16px;
-    min-height: auto;
   }
-
   .blokthree-content {
     gap: 24px;
   }
-
-  .blokthree-quote {
-    padding: 12px;
-    max-width: 100%;
-  }
-
-  .blokthree-quote-text {
-    font-size: 16px;
-    line-height: 120%;
-  }
-
-  .blokthree-quote-mark {
-    font-size: 20px;
-  }
-
   .blokthree-title {
-    font-size: 24px;
-    line-height: 110%;
+    font-size: 28px;
     white-space: normal;
   }
-
   .blokthree-subtitle {
-    font-size: 16px;
+    font-size: 15px;
     white-space: normal;
   }
-
   .blokthree-buttons {
-    flex-direction: column;
     gap: 12px;
-    margin-top: 16px;
+    margin-top: 4px;
   }
-
   .blokthree-btn {
-    padding: 10px 20px;
+    padding: 12px 20px;
     font-size: 14px;
-    border-radius: 20px;
-  }
-
-  .blokthree-btn-primary {
-    padding: 10px 20px;
-  }
-
-  .blokthree-btn-secondary {
-    width: 100%;
-    height: 44px;
-    font-size: 14px;
-    padding: 12px 16px;
   }
 }
 
@@ -267,25 +221,10 @@
   .blokthree-container {
     padding: 30px 12px;
   }
-
   .blokthree-title {
-    font-size: 20px;
+    font-size: 22px;
   }
-
   .blokthree-subtitle {
-    font-size: 14px;
-  }
-
-  .blokthree-quote-text {
-    font-size: 14px;
-  }
-
-  .blokthree-btn {
-    padding: 8px 16px;
-    font-size: 12px;
-  }
-
-  .blokthree-btn-secondary {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
