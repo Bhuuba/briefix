@@ -138,10 +138,10 @@
 .inner-orbit {
   border: 2px solid #c8e6ff;
   border-radius: 50%;
-  width: 160px;
-  height: 160px;
-  top: 22%;
-  left: 22%;
+  width: 125px;
+  height: 125px;
+  top: 14%;
+  left: 15%;
   transform: translate(-50%, -50%);
   animation: rotate-reverse 20s linear infinite;
 }
