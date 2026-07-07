@@ -268,100 +268,20 @@
     gap: 40px;
   }
 
-  .blok-container {
-    margin-left: 0;
-  }
-
-  .blok-header {
-    width: 100%;
-    padding-left: 0;
-  }
-
   .bloktwo-title {
     font-size: 32px;
     margin: 0;
-    padding-left: 0;
   }
 
   .bloktwo-grid-bg {
-    padding: 40px 20px;
+    padding: 40px 16px;
   }
 
   .bloktwo-cards-wrapper {
-    flex-wrap: wrap;
+    flex-direction: column;
     height: auto;
-    gap: 30px;
-  }
-
-  .bloktwo-card {
-    width: 100%;
-    max-width: 320px;
-  }
-
-  .bloktwo-card-1,
-  .bloktwo-card-2,
-  .bloktwo-card-3 {
-    align-self: center !important;
-    margin-bottom: 0 !important;
-  }
-
-  .bloktwo-connector-horizontal {
-    display: none;
-  }
-}
-
-@media (max-width: 550px) {
-  .bloktwo-container {
-    width: 100%;
-    padding: 60px 15px;
-    gap: 40px;
-  }
-
-  .bloktwo-grid-bg {
-    padding: 40px 20px;
-  }
-
-  .bloktwo-cards-wrapper {
-    flex-wrap: wrap;
-    height: auto;
-    gap: 30px;
-    justify-content: center;
-  }
-
-  .bloktwo-card {
-    width: 100%;
-    max-width: 320px;
-  }
-
-  .bloktwo-card-1,
-  .bloktwo-card-2,
-  .bloktwo-card-3 {
-    align-self: center !important;
-    margin-bottom: 0 !important;
-  }
-
-  .bloktwo-connector-horizontal {
-    display: none;
-  }
-}
-
-@media (max-width: 480px) {
-  .bloktwo-container {
-    padding: 40px 12px;
-    gap: 30px;
-  }
-
-  .bloktwo-title {
-    font-size: 24px;
-  }
-
-  .bloktwo-grid-bg {
-    padding: 30px 15px;
-    gap: 30px;
-  }
-
-  .bloktwo-cards-wrapper {
     gap: 20px;
+    align-items: stretch;
   }
 
   .bloktwo-card {
@@ -370,30 +290,63 @@
   }
 
   .bloktwo-card-top {
+    width: 100%;
     height: auto;
-    padding: 16px;
-  }
-
-  .bloktwo-card-title {
-    font-size: 16px;
-  }
-
-  .bloktwo-card-text {
-    font-size: 12px;
+    min-height: 200px;
   }
 
   .bloktwo-card-bottom {
     width: 100%;
-    height: auto;
-    padding: 16px;
   }
 
-  .bloktwo-card-icon {
-    font-size: 32px;
+  .bloktwo-card-1,
+  .bloktwo-card-2,
+  .bloktwo-card-3 {
+    align-self: stretch !important;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
   }
 
-  .bloktwo-card-label {
-    font-size: 12px;
+  .bloktwo-connector-horizontal {
+    display: none;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .bloktwo-container {
+    padding: 40px 12px;
+    gap: 24px;
+  }
+
+  .bloktwo-title {
+    font-size: 24px;
+  }
+
+  .bloktwo-grid-bg {
+    padding: 28px 12px;
+    gap: 16px;
+  }
+
+  .bloktwo-cards-wrapper {
+    gap: 16px;
+  }
+
+  .bloktwo-card-top {
+    padding: 20px 16px;
+    min-height: 180px;
+  }
+
+  .bloktwo-card-bottom {
+    padding: 20px 16px;
+  }
+
+  .bloktwo-card-title {
+    font-size: 17px;
+  }
+
+  .bloktwo-card-text {
+    font-size: 13px;
   }
 }
 
