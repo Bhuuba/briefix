@@ -1,7 +1,6 @@
 .hero {
   width: 100%;
   /* background: linear-gradient(135deg, #fce7f3 0%, #ffffff 40%, #dbeafe 100%); */
-  min-height: 700px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -246,24 +245,6 @@
   }
 }
 
-@media (max-width: 1024px) {
-  .hero {
-    padding: 60px 40px;
-    min-height: 500px;
-  }
-
-  .hero-title {
-    font-size: 48px;
-  }
-
-  .hero-subtitle {
-    font-size: 18px;
-  }
-
-  .hero-illustration {
-    gap: 30px;
-  }
-}
 
 @media (max-width: 768px) {
   .hero {

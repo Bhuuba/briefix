@@ -151,6 +151,24 @@ footer {
   background: #1d6fe8;
 }
 
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.footer-social-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.footer-social a:hover .footer-social-icon {
+  opacity: 1;
+}
+
 /* Bottom */
 .footer-bottom {
   display: flex;

@@ -195,3 +195,65 @@
   line-height: 155%;
   margin: 0;
 }
+
+@media (max-width: 640px) {
+  .uc-modal-overlay {
+    padding: 12px;
+    align-items: flex-end;
+  }
+
+  .uc-modal {
+    padding: 24px 20px 28px;
+    border-radius: 20px 20px 0 0;
+    max-height: 95vh;
+  }
+
+  .uc-modal-desc {
+    width: 100%;
+  }
+
+  .uc-modal-title {
+    font-size: 22px;
+  }
+
+  .uc-modal-middle {
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .uc-modal-char {
+    width: 120px;
+    height: 115px;
+    margin-top: 0;
+    align-self: center;
+  }
+
+  .uc-modal-cols {
+    gap: 20px;
+  }
+
+  .uc-modal-levels {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .uc-modal-levels-title {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 380px) {
+  .uc-modal {
+    padding: 20px 14px 24px;
+  }
+
+  .uc-modal-title {
+    font-size: 19px;
+  }
+
+  .uc-modal-cols {
+    flex-direction: column;
+    gap: 16px;
+  }
+}

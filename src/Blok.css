@@ -480,14 +480,14 @@
 
 @media (max-width: 1000px) {
   .blok-header h1 {
-    margin-left: -248px;
+    margin-left: 0;
   }
 
   .blok-container-1 {
     display: flex;
     flex-wrap: wrap;
-    gap: 38px;
-    padding: 0;
+    gap: 20px;
+    padding: 0 16px;
     max-width: 1440px;
     width: 100%;
     box-sizing: border-box;
@@ -496,9 +496,100 @@
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 768px) {
+  .blok-header {
+    padding: 0 0 24px;
+  }
+
   .blok-header h1 {
-    margin-left: 37px;
+    margin-left: 0;
+    font-size: 32px;
+  }
+
+  /* Override inline-style fixed widths on cards */
+  .blok-block {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100%;
+  }
+
+  .blok-text-container {
+    width: 100% !important;
+  }
+
+  /* Organizational */
+  .org-content-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .org-text-section {
+    margin-top: 0;
+  }
+
+  .org-solar-system {
+    width: 220px;
+    height: 220px;
+    align-self: center;
+  }
+
+  /* Media */
+  .media-content-wrapper {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .media-panels-container {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  /* Analytical */
+  .analytical-content-wrapper {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .analytical-image {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+  }
+
+  .analytical-image img {
+    margin-left: 0;
+    margin-top: 0;
+    max-width: 180px;
+  }
+
+  /* Chat block */
+  .blok-chat-wrapper {
+    margin: 8px 0 0 0;
+  }
+
+  .blok-message-btn {
+    width: auto;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .blok-header h1 {
     font-size: 26px;
+  }
+
+  .blok-block {
+    border-radius: 20px;
+    padding: 16px;
+  }
+
+  .blok-block h3 {
+    font-size: 18px;
+  }
+
+  .org-solar-system {
+    width: 180px;
+    height: 180px;
   }
 }

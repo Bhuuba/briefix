@@ -192,3 +192,47 @@
     width: 100%;
   }
 }
+
+@media (max-width: 480px) {
+  .uc-page {
+    padding: 40px 16px 60px;
+  }
+
+  .uc-title {
+    font-size: 28px;
+  }
+
+  .uc-subtitle {
+    font-size: 14px;
+  }
+
+  .uc-card,
+  .uc-card.reverse {
+    padding: 24px 16px;
+    gap: 24px;
+    border-radius: 20px;
+  }
+
+  .uc-card-title {
+    font-size: 22px;
+  }
+
+  .uc-card-desc {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 375px) {
+  .uc-title {
+    font-size: 24px;
+  }
+
+  .uc-card-title {
+    font-size: 19px;
+  }
+
+  .uc-card,
+  .uc-card.reverse {
+    padding: 20px 14px;
+  }
+}

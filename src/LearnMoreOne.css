@@ -235,11 +235,26 @@
 @media (max-width: 900px) {
   .lm1-block2-inner {
     flex-direction: column;
-    padding: 0 24px;
+    padding: 40px 24px;
+    gap: 20px;
   }
-  .lm1-problem-card,
+
+  .lm1-problem-card {
+    width: 100%;
+    margin-top: 0;
+  }
+
   .lm1-solution-card {
     width: 100%;
+    margin-top: 0;
+  }
+
+  .lm1-block2-center {
+    display: none;
+  }
+
+  .lm1-right {
+    display: none;
   }
 }
 
@@ -490,5 +505,74 @@
   }
   .lm1-title {
     font-size: 36px;
+  }
+
+  .lm1-block3 {
+    padding: 48px 24px 60px;
+  }
+
+  .lm1-block3-title {
+    font-size: 30px;
+    margin-bottom: 36px;
+  }
+
+  .lm1-block4-inner {
+    padding: 0 24px;
+  }
+
+  .lm1-impact-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .lm1-impact-card {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .lm1-block4-sub {
+    margin: 0 0 48px;
+  }
+
+  .lm1-block4-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .lm1-inner {
+    padding: 24px 16px 40px;
+  }
+
+  .lm1-title {
+    font-size: 28px;
+  }
+
+  .lm1-desc {
+    font-size: 15px;
+  }
+
+  .lm1-block3 {
+    padding: 32px 16px 40px;
+  }
+
+  .lm1-block3-title {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .lm1-step-num {
+    font-size: 36px;
+  }
+
+  .lm1-block4-title {
+    font-size: 24px;
+  }
+
+  .lm1-block4-sub {
+    font-size: 14px;
+    margin: 0 0 32px;
   }
 }
